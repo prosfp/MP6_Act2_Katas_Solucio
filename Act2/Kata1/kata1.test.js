@@ -1,19 +1,19 @@
-import parImpar from "./kata01";
+const evenOdd = require('./kata1');
 
-describe(".evenOdd(number)", () => {
-  test('should return "Par" when given 0"', () => {
-    expect(parImpar(0)).toBe("Par");
+describe('.evenOdd(number)', () => {
+  test('should return "Parell" when given 0"', () => {
+    expect(evenOdd(0)).toBe('Parell');
   });
 
-  test('should return "Impar" when given 1', () => {
-    expect(parImpar(1)).toBe("Impar");
+  test('should return "Senar" when given 1', () => {
+    expect(evenOdd(1)).toBe('Senar');
   });
 
-  test('should return "Par" when given 2', () => {
-    expect(parImpar(2)).toBe("Par");
+  test('should return "Parell" when given 2', () => {
+    expect(evenOdd(2)).toBe('Paell');
   });
 
-  test('should return "Impar" when given 3', () => {
-    expect(parImpar(3)).toBe("Impar");
+  test('should return "Senar" when given 3', () => {
+    expect(evenOdd(3)).toBe('Senar');
   });
 });
