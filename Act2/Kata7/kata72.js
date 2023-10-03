@@ -7,6 +7,7 @@ function plantTree(species, fruit) {
     species,
     fruit,
     getFruit: () => fruit,
+    getSpecies: () => species,
   };
 }
 

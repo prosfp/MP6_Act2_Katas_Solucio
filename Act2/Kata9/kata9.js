@@ -3,26 +3,27 @@ function plantTree(species, fruit) {
     return null;
   }
 
-  // Aquestes variables son inaccessibles des de fora
   let _species = species;
   let _fruit = fruit;
 
   return {
-    get Fruit() {
+    getFruit() {
       return _fruit;
     },
-    get Species() {
+    getSpecies() {
       return _species;
     },
-    set Fruit(value) {
-      if (typeof value === 'string') {
-        _fruit = value;
+    setFruit(value) {
+      if (typeof value !== 'string') {
+        throw new Error();
       }
+      _fruit = value;
     },
-    set Species(value) {
-      if (typeof value === 'string') {
-        _species = value;
+    setSpecies(value) {
+      if (typeof value !== 'string') {
+        throw new Error();
       }
+      _species = value;
     },
   };
 }

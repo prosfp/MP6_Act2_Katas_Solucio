@@ -1,5 +1,5 @@
 const { plantTree } = require('./kata72');
-describe('Kata #9.2: plantTree()', () => {
+describe('Kata #7.2: plantTree()', () => {
   test('should return null when some parameter is not valid', () => {
     let arbol = plantTree('pearTree', 1);
     expect(arbol).toBeNull();

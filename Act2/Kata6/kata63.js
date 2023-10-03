@@ -1,5 +1,3 @@
-const { moduleExpression } = require('@babel/types');
-
 const tree = {
   species: 'appleTree',
   fruit: 'apple',

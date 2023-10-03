@@ -1,6 +1,6 @@
 const { plantTree } = require('./kata7');
 
-describe('Kata #9.1: plantarArbol(species, fruit)', () => {
+describe('Kata #7.1: plantarArbol(species, fruit)', () => {
   test('should return null when called with invalid parameters', () => {
     let arbol = plantTree('appleTree', 1);
     expect(arbol).toBeNull();

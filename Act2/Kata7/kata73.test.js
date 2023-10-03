@@ -1,6 +1,6 @@
 const { plantTree } = require('./kata73');
 
-describe('Kata #9.3: plantTree()', () => {
+describe('Kata #7.3: plantTree()', () => {
   test('should return null when some parameter is invalid', () => {
     let arbol = plantTree('pearTree', 1);
     expect(arbol).toBeNull();
@@ -21,23 +21,22 @@ describe('Kata #9.3: plantTree()', () => {
   test('should have only 2 properties getFruit and getSpecies', () => {
     const arbol = plantTree('pearTree', 'pear');
 
-    expect(arbol).toHaveProperty('getFruit');
-    expect(arbol).toHaveProperty('getSpecies');
+    expect(arbol).toHaveProperty('Fruit');
+    expect(arbol).toHaveProperty('Species');
 
-    // Especificamente probamos que no tengan las propiedades que queremos esconder
+    // Provem específicament que no tinguin les propietats que volem amagar
     expect(arbol).not.toHaveProperty('fruit');
     expect(arbol).not.toHaveProperty('species');
   });
 
   test('should return the fruit when calling getFruit() ', () => {
     const arbol = plantTree('pearTree', 'pear');
-
-    expect(arbol.getFruit()).toBe('pear');
+    expect(arbol.Fruit).toBe('pear');
   });
 
   test('all invocar su getter getSpecies devuelve "pearTree"', () => {
     const arbol = plantTree('pearTree', 'pear');
 
-    expect(arbol.getSpecies()).toBe('pearTree');
+    expect(arbol.Species).toBe('pearTree');
   });
 });

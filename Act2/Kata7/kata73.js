@@ -4,13 +4,18 @@ function plantTree(species, fruit) {
   }
 
   return {
-    getFruit() {
+    _fruit: fruit,
+    _species: species,
+    get Fruit() {
       return fruit;
     },
-    getSpecies() {
+    get Species() {
       return species;
     },
   };
 }
+
+// const poma = plantTree('pommer', 'poma');
+// console.log(poma.Fruit);
 
 module.exports = { plantTree };
