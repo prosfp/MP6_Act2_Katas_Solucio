@@ -1,6 +1,6 @@
 const evenOdd = require('./kata1');
 
-describe('.evenOdd(number)', () => {
+describe('Kata #1: a.evenOdd(number)', () => {
   test('should return "Parell" when given 0"', () => {
     expect(evenOdd(0)).toBe('Parell');
   });
