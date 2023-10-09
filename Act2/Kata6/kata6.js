@@ -1,11 +1,7 @@
 const tree = {
+  // Key(ex: species) - Value ("appleTree") pair
   species: 'appleTree',
   fruit: 'apple',
-};
-
-const objectToTest = {
-  name: 'John',
-  age: 30,
 };
 
 module.exports = {

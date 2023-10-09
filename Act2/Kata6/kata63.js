@@ -1,4 +1,5 @@
 const tree = {
+  // Key(ex: species) - Value ("appleTree") pair
   species: 'appleTree',
   fruit: 'apple',
   getFruit() {
@@ -6,4 +7,6 @@ const tree = {
   },
 };
 
-module.exports = { tree };
+module.exports = {
+  tree,
+};

@@ -1,9 +1,5 @@
 function plantTree(species, fruit) {
-  if (typeof species !== 'string' || typeof fruit !== 'string') {
-    return null;
-  }
+  //comprovem que els paràmetres son strings
 
-  return { species, fruit };
+  return {};
 }
-
-module.exports = { plantTree };
