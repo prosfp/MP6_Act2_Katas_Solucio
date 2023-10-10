@@ -3,9 +3,18 @@ function plantTree(species, fruit) {
   if (typeof species !== 'string' && typeof fruit !== 'string') {
     return null;
   }
+
+  // Aquestes variables no son accessibles des de fora
+  let _species = species;
+  let _fruit = fruit;
+
   return {
-    species: species,
-    fruit: fruit,
+    get Fruit() {
+      return _fruit;
+    },
+    get Species() {
+      return _species;
+    },
   };
 }
 

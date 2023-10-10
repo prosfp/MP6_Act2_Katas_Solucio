@@ -4,8 +4,14 @@ function plantTree(species, fruit) {
     return null;
   }
   return {
-    species: species,
-    fruit: fruit,
+    _species: species,
+    _fruit: fruit,
+    getFruit() {
+      return this._fruit;
+    },
+    getSpecies() {
+      return this._species;
+    },
   };
 }
 
