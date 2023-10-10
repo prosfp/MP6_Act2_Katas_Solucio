@@ -16,7 +16,7 @@ function finestraEmergent() {
 // Alerta amb Window: Afegeix un altre botó que digui "Mostra Alerta". Utilitza l'objecte window per mostrar una alerta (finestra emergent d'alerta) amb un missatge quan es fa clic al botó. Informació de Navegador amb navigator:
 
 function alerta() {
-  alert('Hola, això és una alerta!');
+  window.alert('Hola, això és una alerta!');
 }
 
 // Crea una secció a la pàgina que mostri informació sobre el navegador de l'usuari. Amb Navigator pots accedir a propietats com userAgent, platform, language, etc., i mostra aquestes dades a la pàgina. També dona a conèixer les extensions instal·lades a l'ordinador.
