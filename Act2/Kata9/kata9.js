@@ -14,16 +14,26 @@ function plantTree(species, fruit) {
       return _species;
     },
     setFruit(value) {
-      if (typeof value !== 'string') {
-        throw new Error();
+      try {
+        if (typeof value === 'string') {
+          _fruit = value;
+        } else {
+          throw new Error('Value must be a string');
+        }
+      } catch (error) {
+        console.error(error);
       }
-      _fruit = value;
     },
     setSpecies(value) {
-      if (typeof value !== 'string') {
-        throw new Error();
+      try {
+        if (typeof value === 'string') {
+          _species = value;
+        } else {
+          throw new Error('Value must be a string');
+        }
+      } catch (error) {
+        console.error(error);
       }
-      _species = value;
     },
   };
 }
